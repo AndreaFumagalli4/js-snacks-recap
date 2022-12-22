@@ -1,0 +1,17 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.even {
+    color: green;
+    border: 2px solid magenta;
+}
+
+div.odd {
+    color: red;
+    border: 2px solid lime;
+}
