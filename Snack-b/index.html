@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack B</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <div id="app">
+            <div class="container">
+                <header>
+                    <h1>
+                        Snack B
+                    </h1>
+                </header>
+                <main>
+                    <label for="user-element-num">Quanti elementi vuoi includere nella lista?</label>
+                    <input type="number" id="user-element-num" v-model="userInput" @keyup.enter="generateArrayRandomNumbers()">
+                    <ul>
+                        <li v-for="number in numbersList">
+                            {{number}}
+                        </li>
+                    </ul>
+                </main>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
