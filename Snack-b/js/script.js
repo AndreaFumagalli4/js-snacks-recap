@@ -14,7 +14,8 @@ createApp({
     methods : {
         generateArrayRandomNumbers() {
             const item = this.userInput;
-            axios.post('https://flynn.boolean.careers/exercises/api/array/integers?min=1&max=100&items=n', item)
+            const apiLink = 'https://flynn.boolean.careers/exercises/api/array/integers?min=1&max=100&items=' + item;
+            axios.get(apiLink)
             .then((result) => {
                 console.log(result.data.response);
                 this.numbersList = result.data.response;

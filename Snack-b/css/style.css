@@ -22,3 +22,7 @@ ul {
 ul li {
     padding: .3rem;
 }
+
+main p {
+    color: red;
+}
